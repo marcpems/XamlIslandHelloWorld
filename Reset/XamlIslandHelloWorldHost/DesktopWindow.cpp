@@ -31,11 +31,11 @@ DesktopWindow::DesktopWindow() noexcept
     WINRT_ASSERT(m_window);
 
  //   InitXaml(m_window, m_rootGrid, m_scale, m_xamlSource);
- //   m_native2 = m_xamlSource.as<IDesktopWindowXamlSourceNative2>();
- //   NewScale(m_currentDpi);
-	//RECT size;
-	//GetClientRect(m_window, &size);
-	//PostMessage(m_window, WM_SIZE, 0, MAKELPARAM(size.right - size.left, size.bottom - size.top));
+    m_native2 = m_xamlSource.as<IDesktopWindowXamlSourceNative2>();
+    NewScale(m_currentDpi);
+	RECT size;
+	GetClientRect(m_window, &size);
+	PostMessage(m_window, WM_SIZE, 0, MAKELPARAM(size.right - size.left, size.bottom - size.top));
 }
 
 DesktopWindow::~DesktopWindow()

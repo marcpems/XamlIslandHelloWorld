@@ -135,13 +135,11 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
 	NativeCallback::Instance()->Init(window.GetMainWindow());
 
 	//window.GetRootElement().Loaded([&](winrt::Windows::Foundation::IInspectable const&, Windows::UI::Xaml::RoutedEventArgs const&) {
-	//	std::wstring currentPath = ExePath();
 	//	bool isPackaged = IsPackaged();
 
 	//	// start loading things
 	//	pBroker->GetGoing(isPackaged);
 
-	//	// TODO: Expand this to include a window!
 	//	auto container = pBroker->GetUI();
 
 	//	/// Add the content to the UI Island element 
