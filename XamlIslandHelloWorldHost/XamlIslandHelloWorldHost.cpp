@@ -140,7 +140,6 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int)
 		// start loading things
 		pBroker->GetGoing(isPackaged);
 
-		// TODO: Expand this to include a window!
 		auto container = pBroker->GetUI();
 
 		/// Add the content to the UI Island element 
