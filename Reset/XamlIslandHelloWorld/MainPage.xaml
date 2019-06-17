@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="XamlIslandHelloWorld.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XamlIslandHelloWorld"
+    xmlns:control ="using:Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" Foreground="LightBlue" FontWeight="Bold">Hello World</TextBlock>
+            <Button Margin="0,40" Width="200" Height="64" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Click">Exit the App</Button>
+        </StackPanel>
+    </Grid>
+</Page>
